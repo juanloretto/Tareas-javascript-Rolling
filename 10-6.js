@@ -24,9 +24,8 @@ console.log(programita.toUpperCase(), programita.length)
 - El número redondeado a su menor valor
 - El número original multiplicado por 3
 - El resto del número dividido por 2 */
-let numero = prompt('Ingrese un numero con 5 decimales')
+let numero =parseFloat(prompt('Ingrese un numero con 5 decimales')) 
 
-parseInt(numero)
 console.log(Math.ceil(numero))
 console.log(Math.floor(numero))
 console.log(numero*3)
