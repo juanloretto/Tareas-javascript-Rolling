@@ -12,6 +12,9 @@ por ejemplo si se ingresa un monto de 5000 el descuento sera 550, y por tanto el
 //Dato de salida: El descuento y monto final
 
 let montoTotaldeVenta = parseInt(prompt('Ingrese el monto a pagar'))
+if(montoTotaldeVenta <500){
+   alert(`No hay descuento, el monto total es de ${montoTotaldeVenta}`)
+}
 if(montoTotaldeVenta >= 500 && montoTotaldeVenta <= 1000){
    let descuento = montoTotaldeVenta * 0.05;
    let montoCondescuento = montoTotaldeVenta - descuento;
@@ -31,6 +34,6 @@ if(montoTotaldeVenta >= 1000 && montoTotaldeVenta <= 7000){
      descuento = montoTotaldeVenta * 0.25;
      montoCondescuento = montoTotaldeVenta - descuento;
     alert(`Su descuento es de ${descuento} el total a pagar seria ${montoCondescuento}`)
- } else{
+ } /* else{
     alert(`No hay descuento, el monto total es de ${montoTotaldeVenta}`)
- }
+ } */
